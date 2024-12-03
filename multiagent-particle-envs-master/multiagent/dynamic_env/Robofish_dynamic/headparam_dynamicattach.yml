@@ -1,0 +1,235 @@
+---
+physicsparam:
+  rho: 1000
+  g: 9.8
+rigidhead:
+  r_bm:
+  - [0.0]
+  - [0.0]
+  - [0.04]
+  #- [0.0001]
+  r_bt:
+  - [-0.2]
+  - [0]
+  - [0]
+  r_bpl:
+  #- [0.0407]
+  - [0.10]
+  - [-0.10]
+  - [0]
+  r_bpr:
+  #- [0.0407]
+  - [0.10]
+  - [0.10]
+  - [0]
+  r_bba:
+  - [0.10]
+  - [0.0]
+  - [0.05]
+  mass: 1.3
+  #mass: 2.0
+  #inertia_tensor:
+  #- [0.001871,0,0.0003878]
+  #- [0,0.042260,0]
+  #- [0.0003878,0,0.012324]
+  inertia_tensor:
+  #- [0.001871,0,0]
+  #- [0,0.042260,0]
+  #- [0,0,0.012324]
+  - [0.005, 0, 0]
+  - [0, 0.03, 0]
+  - [0, 0, 0.03]
+  mass_ad:
+  - [1,0,0]
+  - [0,1,0]
+  - [0,0,1]
+  inertia_tensor_ad:
+  - [0.01,0,0]
+  - [0,0.03,0]
+  - [0,0,0.03]
+  mass_wp: 0.0
+  # hydrodynamic parameters
+  S: 0.006718
+  C_D: 0.1
+  C_SF: 0.1
+  C_L: 0.1
+  C_DM: 0.1
+  C_SFM: 0.1
+  C_LM: 0.1
+  Kv:
+  - [-5.0]
+  - [-60.0]
+  - [-60.0]
+  Kw: 
+  #- [-0.5]
+  - [-0.02]
+  - [-0.2]
+  - [-0.1]
+  a: 0.155
+  b: 0.045
+  c: 0.042
+  # reaction wheel parameters
+  J_wheel: 0.00005
+  wheelvel: 0
+  wheelaccel: 0
+  # motion informations
+  position:
+  - [0]
+  - [0]
+  - [0]
+  attitude:
+  - [0]
+  - [0]
+  - [0]
+  velocity:
+  - [0]
+  - [0]
+  - [0]
+  acceleration:
+  - [0]
+  - [0]
+  - [0] 
+  angvel:
+  - [0]
+  - [0]
+  - [0] 
+  angaccel:
+  - [0]
+  - [0]
+  - [0]
+  attack_angle: 0
+  slide_angle: 0
+  # force informations
+  F_ext:
+  - [0]
+  - [0]
+  - [0]
+  M_ext:
+  - [0]
+  - [0]
+  - [0]
+  F_grav:
+  - [0]
+  - [0]
+  - [0]
+  M_grav:
+  - [0]
+  - [0]
+  - [0]  
+  F_bouy:
+  - [0]
+  - [0]
+  - [0]
+  M_bouy:
+  - [0]
+  - [0]
+  - [0]
+  F_hydro:
+  - [0]
+  - [0]
+  - [0]
+  M_hydro:
+  - [0]
+  - [0]
+  - [0]
+  F_pect:
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  M_pect:
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  F_tail:
+  - [0]
+  - [0]
+  - [0]
+  M_tail:
+  - [0]
+  - [0]
+  - [0]
+  f_hydro_ori:
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  - [0]
+  # wheel moment
+  V_wheel: 0
+  T_wheel: 0
+  
+pectoralfin:
+  - pf_left:
+    name: 'pectfin left'
+    # S: 0.005486
+    # S: 0.005486
+    S: 0.003
+    d: 0.03
+    length: 0.06
+    height: 0.05
+    C_L: 0
+    C_D: 0
+    K_D: 0
+    angle: 0
+    attack_angle: 0
+    velocity:
+    - [0]
+    - [0]
+    - [0]
+    F_D: 0
+    F_L: 0
+    M_D: 0
+  - pf_right:
+    name: 'pectfin right'  
+    S: 0.003
+    d: 0.03
+    length: 0.06
+    height: 0.05
+    C_L: 0
+    C_D: 0
+    K_D: 0
+    angle: 0
+    attack_angle: 0
+    velocity:
+    - [0]
+    - [0]
+    - [0]
+    F_D: 0
+    F_L: 0
+    M_D: 0
+
+caudalfin:
+  - fin:
+    name: 'caudal fin'
+    l_tf: 0.06
+    S: 0.008
+    attack_angle: 0
+    K_D: 0.001
+    length: 0.12
+    height: 0.10
+    velocity:
+    - [0]
+    - [0]
+    - [0]
+    drag:
+    - [0]
+    - [0]
+    - [0]
+    lift:
+    - [0]
+    - [0]
+    - [0]
+...
